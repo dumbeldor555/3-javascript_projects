@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+</style>
+<body>
+ <ul>
+   <li><a href="#">1</a></li>
+   <li><a href="#">2</a></li>
+   <li><a href="#">3</a></li>
+   <li><a href="#">4</a></li>
+ </ul> 
+
+  <script> 
+
+   const ul = document.querySelectorAll('li');
+   ul.forEach(li => {
+    li.addEventListener('click' ,function(){
+    console.log(this.firstElementChild.innerHTML);
+    function my () {
+      console.log(this);
+    }
+    my();
+    });
+   });
+ 
+
+  // const whight = 20;
+
+  //  const a = {
+  //  whight : 10,
+  //  height : 5,
+  //  name : 'bala',
+  //  surname : 'kala',
+  //  ////////////
+  //  myWhight : function () {
+  //    return this;
+  // //  return function jo() {
+  // //    return function mo(){
+  // //      return function to() {
+  // //        return function ju() {
+  // //          return this;
+  // //        };
+  // //      };
+  // //    }
+  // //  }
+  //  ////////////
+  //  },
+  //  myHeight : function() {
+  //  return this.height;
+  //  }
+  //  }
+
+  // console.log(a.myWhight());
+
+
+
+
+
+  </script>
+</body>
+</html>

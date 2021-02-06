@@ -1,0 +1,29 @@
+{
+  "name": "microposts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --output-public-path=/build/",
+    "json:server": "json-server --watch api/db.json"
+  },
+  "author": "aadil",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^2.1.0-beta.22",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
